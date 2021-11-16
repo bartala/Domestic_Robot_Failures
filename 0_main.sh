@@ -16,10 +16,10 @@ echo "finished downloading files for bert"
 
 # data preperation for fine-tuning bert
 python3 /home/1_amazonebert.py
-echo "finished extrecting tools"
+echo "finished data preperation for bert"
 
 # fine tune the BERT_base_cased model
-!python3 ./bert/run_classifier.py \
+python3 ./bert/run_classifier.py \
     --task_name=cola \
     --do_train=true \
     --do_eval=true \
@@ -36,3 +36,4 @@ echo "finished extrecting tools"
     --output_dir=./bert_output/
     
  python3 /home/2_amazonebert_results.py
+ echo "finished bert evaluation"
