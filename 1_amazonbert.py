@@ -17,7 +17,7 @@ PTH = os.environ.get('PTH')
 df = pd.read_csv(os.path.join(PTH,"Category.csv"))
 
 # choose between: [Service, Varies, Interaction, Technical, No specified failures]
-term = 'No specified failures'
+term = 'Service'
 
 df = df[['id','text',term]] # <id, text, label>
 
