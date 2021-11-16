@@ -15,7 +15,7 @@ mkdir ./bert/bert_output
 echo "finished downloading files for bert"
 
 # data preperation for fine-tuning bert
-python3 /home/amazonebert.py
+python3 /home/1_amazonebert.py
 echo "finished extrecting tools"
 
 # fine tune the BERT_base_cased model
@@ -35,4 +35,4 @@ echo "finished extrecting tools"
     --num_train_epochs=4.0 \
     --output_dir=./bert_output/
     
- python3 /home/amazonebert_results.py
+ python3 /home/2_amazonebert_results.py
