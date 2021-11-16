@@ -17,7 +17,7 @@ PTH = os.environ.get('PTH')
 df = pd.read_csv(os.path.join(PTH,"Category.csv"))
 
 # choose between: [Service, Varies, Interaction, Technical, No specified failures]
-# for failure model entries '1' and '2' are considered as failures denoted by '1' else '0'
+# for failure identification model entries '1' and '2' are considered as failures denoted by '1' else '0'
 term = 'Service'
 
 df = df[['id','text',term]] # <id, text, label>
