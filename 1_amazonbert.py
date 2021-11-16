@@ -13,7 +13,7 @@ load_dotenv(verbose=True)
 # define variables
 PTH = os.environ.get('PTH')
 
-# load the CSV file "Category.csv" with texts label
+# load the CSV file "Category.csv" with texts labels
 df = pd.read_csv(os.path.join(PTH,"Category.csv"))
 
 # choose between: [Service, Varies, Interaction, Technical, No specified failures]
