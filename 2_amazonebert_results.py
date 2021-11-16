@@ -11,9 +11,9 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 load_dotenv(verbose=True)
 
 # define variables
-PTH = os.environ.get('PTH')
+PTH = os.environ.get('PTH_to_classifications')
 
-df_results = pd.read_csv(os.join.path(PTH,"/bert_output.tsv"),sep="\t",header=None)
+df_results = pd.read_csv(os.join.path(PTH,"bert_output.tsv"),sep="\t",header=None)
 
 df_results_csv = pd.DataFrame({'index_col':df_test['index_col'].tolist(),
                                'Is_Response':df_results.idxmax(axis=1)})
